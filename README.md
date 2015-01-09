@@ -23,21 +23,29 @@
 
 ##配置
 
-* 修改绑定按键(默认为<F12>)
+* 修改绑定按键(默认为\<F12\>)
 
+```
     let g:youdao_dict_translate_key = '<C-t>'
+```
 
 * 绑定命令(默认为YouDao)
 
+```
     let g:youdao_dict_translate_command = 'FanYi'
+```
 
 * 禁止绑定按键
 
+```
     let g:youdao_dict_nomap = 1
+```
 
 * 禁止绑定命令
 
+```
     let g:youdao_dict_nocmd = 1
+```
 
 ##使用
 
