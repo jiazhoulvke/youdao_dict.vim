@@ -46,7 +46,7 @@ function! Youdao_Dict_Selected_String()
     normal v
     normal `>
     silent normal "ty
-    return s:Youdao_Dict(@t)
+    return Youdao_Dict(@t)
 endfunction
 
 if g:youdao_dict_nomap == 0
