@@ -4,6 +4,13 @@
 " Blog:     http://www.jiazhoulvke.com 
 " Version:  0.1
 " --------------------------------------
+if has('python3')
+    command! -nargs=1 Python python3 <args>
+elseif has('python')
+    command! -nargs=1 Python python <args>
+else
+    finish
+endif
 
 if exists('g:youdao_dict_loaded')
     finish
@@ -27,7 +34,7 @@ if !exists('g:youdao_dict_nocmd')
 endif
 
 function! Youdao_Dict(word)
-python << EOF
+Python << EOF
 #coding=utf-8
 import vim,requests
 from pyquery import PyQuery
